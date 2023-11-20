@@ -1,18 +1,19 @@
-import useUser from "./model/useUser";
+import useUser from "./action/useUser";
 import Loading from "./ui/Loading";
 import Error from "./ui/Error";
 import CardContainer from "./ui/CardContainer";
 
-function Card({ userId }: { userId: string }) {
+function Card({ userId, languages, stack }: { userId: string, languages: string[], stack: string[] }) {
 
   const { data, isLoading, isError } = useUser(userId);
+
   if (isLoading) return <Loading />
   if (isError || !data) return <Error />
 
   return (
       <CardContainer 
-      languages={["js", "python", "jdas"]}
-      stack={["React.js", "Angular", "Django", "GraphQL", "Laravel"]}
+      languages={languages}
+      stack={stack}
       data={data} />
       )
 }

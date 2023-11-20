@@ -1,0 +1,128 @@
+.cardContainer {
+  background: #1A1C22;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  max-width: 230px;
+  width: 100%;
+  border-radius: 15px;
+  min-height: 280px;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.cardContainer:hover {
+  background: linear-gradient(125.71deg, #2c2c2c 10.31%, #2c2c2c 91.99%),
+linear-gradient(0deg, #bccae9, #bccae9);
+outline: 1px solid #BCCAEB66;
+box-shadow: 0px 8px 24px 0px #11141B33;
+  cursor: pointer;
+}
+
+.name {
+  color: white;
+  line-height: 22.4px;
+  font-size: 16px;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+
+.nameSpacer {
+  height: 4px;
+}
+
+.nameContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.flag {
+  margin-left: 8px;
+  font-size: 16px;
+}
+
+.position {
+  font-size: 14px;
+  line-height: 21px;
+  color: #8F9094;
+}
+
+.avatar {
+  border-radius: 5px;
+}
+
+.avatarContainer {
+  position: relative;
+}
+
+.leaderIcon {
+  position: absolute;
+  right: -15px;
+  top: -15px;
+}
+
+.upperContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.langsContainer {
+  margin-top: 15px;
+  gap: 8px;
+  display: flex;
+  max-width: 90px;
+  width: 100%;
+}
+
+.langIcon {
+  padding: 8px;
+  border-radius: 5px;
+  background: #2F3239;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: white;
+  line-height: 22.4px;
+  width: 100%;
+}
+
+.stackCard {
+  font-size: 16px;
+  line-height: 22.4px;
+  color: white;
+  text-align: center;
+  padding: 5px 16px;
+  border-radius: 5px;
+}
+
+.stackContainer {
+  gap: 8px;
+}
+
+.containerDouble {
+  display: flex;
+}
+
+.containerFour {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+
+  grid-template-areas:
+  "item0 item1"
+  "item2 item3";
+}
+
+.containerTriple {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+  "item0 item1"
+  "item2 item2";
+}

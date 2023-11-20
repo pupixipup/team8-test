@@ -1,4 +1,3 @@
-import useUser from "../model/useUser";
 import Image from "next/image";
 import styles from "./Card.module.scss";
 import crown from "@/shared/assets/crown.svg";

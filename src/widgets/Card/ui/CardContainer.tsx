@@ -1,12 +1,12 @@
-import User from "@/shared/model/User";
-import Avatar from "./Avatar";
+import { User } from "@/shared/model/User";
+import { Avatar } from "./Avatar";
 import styles from "./Card.module.scss"
-import Langs from "./Langs";
-import Name from "./Name";
-import Position from "./Position";
-import Stack from "./Stack";
+import { Langs } from "./Langs";
+import { Name } from "./Name";
+import { Position } from "./Position";
+import { Stack } from "./Stack";
 
-function CardContainer({ data, languages, stack }: { data: User, languages: string[], stack: string[] }) {
+export function CardContainer({ data, languages, stack }: { data: User, languages: string[], stack: string[] }) {
 
   return (
     <div className={styles.cardContainer}>
@@ -28,5 +28,3 @@ function CardContainer({ data, languages, stack }: { data: User, languages: stri
     </div>
   )
 }
-
-export default CardContainer

@@ -1,7 +1,7 @@
-import LangIcon from "./LangIcon"
+import { LangIcon } from "./LangIcon"
 import styles from "./Card.module.scss"
 
-function Langs( { languages }: { languages: string[] }) {
+export function Langs( { languages }: { languages: string[] }) {
 
   let displayedLangs = languages.map((lang) => <LangIcon key={lang} icon={lang} />);
 
@@ -15,5 +15,3 @@ function Langs( { languages }: { languages: string[] }) {
     </div>
   )
 }
-
-export default Langs

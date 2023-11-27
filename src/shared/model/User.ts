@@ -1,4 +1,4 @@
-interface User {
+export interface User {
   results: [
     {
       gender: string;
@@ -64,5 +64,3 @@ interface User {
     version: string;
   };
 };
-
-export default User;

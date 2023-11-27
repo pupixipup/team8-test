@@ -1,9 +1,9 @@
-import useUser from "./action/useUser";
-import Loading from "./ui/Loading";
-import Error from "./ui/Error";
-import CardContainer from "./ui/CardContainer";
+import { useUser } from "./action/useUser";
+import { Loading } from "./ui/Loading";
+import { Error } from "./ui/Error";
+import { CardContainer } from "./ui/CardContainer";
 
-function Card({ userId, languages, stack }: { userId: string, languages: string[], stack: string[] }) {
+export function Card({ userId, languages, stack }: { userId: string, languages: string[], stack: string[] }) {
 
   const { data, isLoading, isError } = useUser(userId);
 
@@ -17,5 +17,3 @@ function Card({ userId, languages, stack }: { userId: string, languages: string[
       data={data} />
       )
 }
-
-export default Card

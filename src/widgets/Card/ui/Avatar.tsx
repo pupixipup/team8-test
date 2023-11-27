@@ -2,7 +2,7 @@ import Image from "next/image";
 import styles from "./Card.module.scss";
 import crown from "@/shared/assets/crown.svg";
 
-function Avatar({ isLeader = false, avatarUrl, name }: {isLeader?: boolean, avatarUrl: string, name: string}) {
+export function Avatar({ isLeader = false, avatarUrl, name }: {isLeader?: boolean, avatarUrl: string, name: string}) {
 
   return (
     <div className={styles.avatarContainer}>
@@ -11,5 +11,3 @@ function Avatar({ isLeader = false, avatarUrl, name }: {isLeader?: boolean, avat
     </div>
   )
 }
-
-export default Avatar

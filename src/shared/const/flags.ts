@@ -1,9 +1,7 @@
 import UA from "../assets/ua.svg"
 import RO from "../assets/ro.svg"
 
-const flags: {[key: string]: any} = {
+export const flags: {[key: string]: string} = {
   UA,
   RO
 };
-
-export default flags;

@@ -1,8 +1,8 @@
 import Image from "next/image"
 import styles from "./Card.module.scss"
-import langs from "@/shared/const/langs"
+import { langs } from "@/shared/const/langs"
 
-function LangIcon( { icon, text }: { icon?: string, text?: string }) {
+export function LangIcon( { icon, text }: { icon?: string, text?: string }) {
 
 
   return (
@@ -11,5 +11,3 @@ function LangIcon( { icon, text }: { icon?: string, text?: string }) {
     </div>
   )
 }
-
-export default LangIcon

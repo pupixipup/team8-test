@@ -1,4 +1,4 @@
-const stack: {[key: string]: string} = {
+export const stack: { [key: string]: string } = {
   ember: "#E24B31",
   angular: "#C3002F",
   redux: "#6333AA",
@@ -9,5 +9,3 @@ const stack: {[key: string]: string} = {
   laravel: "#A62929",
   pytorch: "#B26409"
 }
-
-export default stack;

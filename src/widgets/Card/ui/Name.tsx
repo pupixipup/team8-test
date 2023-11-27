@@ -1,6 +1,6 @@
 import { ReactNode } from "react"
 import styles from "./Card.module.scss"
-import flags from "@/shared/const/flags"
+import { flags } from "@/shared/const/flags"
 import Image from "next/image"
 
 interface IName {
@@ -8,7 +8,7 @@ interface IName {
   first: string
   last: string
 }
-function Name( { name, country }: { name: IName, country: string }) {
+export function Name( { name, country }: { name: IName, country: string }) {
   
   country = Math.random() > 0.5 ? "UA" : "RO"
 
@@ -19,5 +19,3 @@ function Name( { name, country }: { name: IName, country: string }) {
     </div>
   )
 }
-
-export default Name

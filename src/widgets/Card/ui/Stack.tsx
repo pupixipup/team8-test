@@ -1,7 +1,7 @@
-import StackCard from "./StackCard"
+import { StackCard } from "./StackCard"
 import styles from "./Card.module.scss"
 
-function Stack({ stack }: { stack: string[] }) {
+export function Stack({ stack }: { stack: string[] }) {
 
   let displayedStack = stack;
   if (displayedStack.length > 4) {
@@ -28,5 +28,3 @@ function Stack({ stack }: { stack: string[] }) {
     </div>
   )
 }
-
-export default Stack

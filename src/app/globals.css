@@ -1,8 +1,9 @@
-:root, * {
+:root,
+* {
   font-family: Rubik;
   box-sizing: border-box;
 }
 
 body {
-background: black;
+  background: black;
 }

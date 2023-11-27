@@ -1,5 +1,5 @@
 .cardContainer {
-  background: #1A1C22;
+  background: #1a1c22;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -13,9 +13,9 @@
 
 .cardContainer:hover {
   background: linear-gradient(125.71deg, #2c2c2c 10.31%, #2c2c2c 91.99%),
-linear-gradient(0deg, #bccae9, #bccae9);
-outline: 1px solid #BCCAEB66;
-box-shadow: 0px 8px 24px 0px #11141B33;
+    linear-gradient(0deg, #bccae9, #bccae9);
+  outline: 1px solid #bccaeb66;
+  box-shadow: 0px 8px 24px 0px #11141b33;
   cursor: pointer;
 }
 
@@ -45,7 +45,7 @@ box-shadow: 0px 8px 24px 0px #11141B33;
 .position {
   font-size: 14px;
   line-height: 21px;
-  color: #8F9094;
+  color: #8f9094;
 }
 
 .avatar {
@@ -81,7 +81,7 @@ box-shadow: 0px 8px 24px 0px #11141B33;
 .langIcon {
   padding: 8px;
   border-radius: 5px;
-  background: #2F3239;
+  background: #2f3239;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -114,8 +114,8 @@ box-shadow: 0px 8px 24px 0px #11141B33;
   grid-template-rows: repeat(2, 1fr);
 
   grid-template-areas:
-  "item0 item1"
-  "item2 item3";
+    'item0 item1'
+    'item2 item3';
 }
 
 .containerTriple {
@@ -123,6 +123,6 @@ box-shadow: 0px 8px 24px 0px #11141B33;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-template-areas:
-  "item0 item1"
-  "item2 item2";
+    'item0 item1'
+    'item2 item2';
 }

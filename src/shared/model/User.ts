@@ -63,4 +63,4 @@ export interface User {
     page: number;
     version: string;
   };
-};
+}

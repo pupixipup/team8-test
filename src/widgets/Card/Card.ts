@@ -2,7 +2,7 @@ import { User } from '@/shared/model/User';
 import { ReactNode } from 'react';
 
 export interface AvatarProps {
-  isLeader?: boolean;
+  isLeader: Boolean;
   avatarUrl: string;
   name: string;
 }
@@ -11,6 +11,7 @@ export interface CardContainerProps {
   data: User;
   languages: string[];
   stack: string[];
+  isLeader: Boolean;
 }
 
 export interface LangIconProps {

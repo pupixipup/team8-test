@@ -2,6 +2,7 @@ import { FC, SVGProps } from 'react';
 export const Crown: FC<SVGProps<SVGSVGElement>> = (props) => {
   return (
     <svg
+      className={props?.className}
       width='40'
       height='40'
       viewBox='0 0 40 40'

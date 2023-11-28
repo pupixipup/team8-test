@@ -7,16 +7,25 @@ import React from 'react';
 export function Card({
   userId,
   languages,
+  isLeader,
   stack,
 }: {
   userId: string;
   languages: string[];
   stack: string[];
+  isLeader: Boolean;
 }) {
   const { data, isLoading, isError } = useUser(userId);
 
   if (isLoading) return <Loading />;
   if (isError || !data) return <Error />;
 
-  return <CardContainer languages={languages} stack={stack} data={data} />;
+  return (
+    <CardContainer
+      isLeader={isLeader}
+      languages={languages}
+      stack={stack}
+      data={data}
+    />
+  );
 }

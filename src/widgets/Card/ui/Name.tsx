@@ -9,7 +9,9 @@ export function Name({ name, country }: NameProps) {
 
   return (
     <div className={styles.nameContainer}>
-      <span className={styles.name}>{name.first + ' ' + name.last}</span>
+      <span className={styles.name}>
+        {name.first} {name.last}
+      </span>
       <Icon />
     </div>
   );

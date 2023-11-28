@@ -18,7 +18,7 @@ export function CardContainer({ data, languages, stack }: CardContainerProps) {
           />
           <Langs languages={languages} />
         </div>
-        <Name name={data.results[0].name} country={data.results[0].nat} />
+        <Name name={data.results[0].name} country={'UA'} />
         <div className={styles.nameSpacer}></div>
         <Position>Data Scientist</Position>
       </div>

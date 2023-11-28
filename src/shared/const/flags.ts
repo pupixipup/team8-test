@@ -1,7 +1,9 @@
-import UA from '../assets/ua.svg';
-import RO from '../assets/ro.svg';
+import { FC, SVGProps } from 'react';
+import { UA } from './../assets/UA';
+import { RO } from './../assets/RO';
 
-export const flags: { [key: string]: string } = {
+// FC<SVGProps<SVGSVGElement>>
+export const flags: { [key: string]: FC<SVGProps<SVGSVGElement>> } = {
   UA,
   RO,
 };

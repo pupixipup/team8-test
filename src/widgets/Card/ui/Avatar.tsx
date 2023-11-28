@@ -1,16 +1,9 @@
 import Image from 'next/image';
 import styles from './Card.module.scss';
 import crown from '@/shared/assets/crown.svg';
+import { AvatarProps } from '../Card';
 
-export function Avatar({
-  isLeader = false,
-  avatarUrl,
-  name,
-}: {
-  isLeader?: boolean;
-  avatarUrl: string;
-  name: string;
-}) {
+export function Avatar({ isLeader = false, avatarUrl, name }: AvatarProps) {
   return (
     <div className={styles.avatarContainer}>
       {isLeader && (

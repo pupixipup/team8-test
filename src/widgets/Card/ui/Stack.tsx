@@ -1,7 +1,8 @@
 import { StackCard } from './StackCard';
 import styles from './Card.module.scss';
+import { StackProps } from '../Card';
 
-export function Stack({ stack }: { stack: string[] }) {
+export function Stack({ stack }: StackProps) {
   let displayedStack = stack;
   if (displayedStack.length > 4) {
     displayedStack = displayedStack.slice(0, 3);

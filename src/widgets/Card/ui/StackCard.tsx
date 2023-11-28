@@ -1,13 +1,8 @@
 import { stack } from '@/shared/const/stack';
 import styles from './Card.module.scss';
+import { StackCardProps } from '../Card';
 
-export function StackCard({
-  stackName,
-  style,
-}: {
-  stackName: string;
-  style: Partial<CSSStyleDeclaration>;
-}) {
+export function StackCard({ stackName, style }: StackCardProps) {
   const stackColor = stack[stackName.toLowerCase()] ?? '#3a3f49';
   return (
     <div

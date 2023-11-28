@@ -5,16 +5,9 @@ import { Langs } from './Langs';
 import { Name } from './Name';
 import { Position } from './Position';
 import { Stack } from './Stack';
+import { CardContainerProps } from '../Card';
 
-export function CardContainer({
-  data,
-  languages,
-  stack,
-}: {
-  data: User;
-  languages: string[];
-  stack: string[];
-}) {
+export function CardContainer({ data, languages, stack }: CardContainerProps) {
   return (
     <div className={styles.cardContainer}>
       <div className={styles.topContainer}>

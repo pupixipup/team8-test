@@ -2,13 +2,9 @@ import { ReactNode } from 'react';
 import styles from './Card.module.scss';
 import { flags } from '@/shared/const/flags';
 import Image from 'next/image';
+import { NameProps } from '../Card';
 
-interface IName {
-  title: string;
-  first: string;
-  last: string;
-}
-export function Name({ name, country }: { name: IName; country: string }) {
+export function Name({ name, country }: NameProps) {
   country = Math.random() > 0.5 ? 'UA' : 'RO';
 
   return (

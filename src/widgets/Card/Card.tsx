@@ -2,6 +2,7 @@ import { useUser } from './action/useUser';
 import { Loading } from './ui/Loading';
 import { Error } from './ui/Error';
 import { CardContainer } from './ui/CardContainer';
+import React from 'react';
 
 export function Card({
   userId,

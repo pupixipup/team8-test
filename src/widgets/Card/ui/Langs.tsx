@@ -1,7 +1,8 @@
 import { LangIcon } from './LangIcon';
 import styles from './Card.module.scss';
+import { LangsProps } from '../Card';
 
-export function Langs({ languages }: { languages: string[] }) {
+export function Langs({ languages }: LangsProps) {
   let displayedLangs = languages.map((lang) => (
     <LangIcon key={lang} icon={lang} />
   ));

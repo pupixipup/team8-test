@@ -1,28 +1,20 @@
 import { StackCard } from './StackCard';
 import styles from './Card.module.scss';
 import { StackProps } from '../Card';
+import { getGridClass } from '../lib/getGridClass';
 
 export function Stack({ stack }: StackProps) {
   let displayedStack = stack;
+
   if (displayedStack.length > 4) {
     displayedStack = displayedStack.slice(0, 3);
-    displayedStack.push('+ ' + (stack.length - 4));
+    displayedStack.push('+ ' + (stack.length - 3));
   }
 
-  let className = styles.stackContainer;
-  if (displayedStack.length === 3) {
-    className += ' ' + styles.containerTriple;
-  }
+  let className = getGridClass(displayedStack);
 
-  if (displayedStack.length === 2) {
-    className += ' ' + styles.containerDouble;
-  }
-
-  if (displayedStack.length === 4) {
-    className += ' ' + styles.containerFour;
-  }
   return (
-    <div className={className}>
+    <div className={`${styles.stackContainer} ${className}`}>
       {displayedStack.map((element, i) => (
         <StackCard
           style={{ gridArea: ('item' + i).toString() }}

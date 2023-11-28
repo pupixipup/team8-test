@@ -1,6 +1,6 @@
 import { StackCard } from './StackCard';
 import styles from './Card.module.scss';
-import { StackProps } from '../Card';
+import { StackProps } from '../types';
 import { getGridClass } from '../lib/getGridClass';
 
 export function Stack({ stack }: StackProps) {

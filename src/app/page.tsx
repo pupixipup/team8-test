@@ -1,7 +1,7 @@
 'use client';
 
 import styles from './page.module.css';
-import { Card } from '@/widgets/Card/Card';
+import Card from '@/widgets/Card/Card';
 
 const users = [
   {

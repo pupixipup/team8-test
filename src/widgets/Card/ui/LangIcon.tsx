@@ -1,6 +1,6 @@
 import styles from './Card.module.scss';
 import { langs } from '@/shared/const/langs';
-import { LangIconProps } from '../Card';
+import { LangIconProps } from '../types';
 import { ReactNode } from 'react';
 
 export function LangIcon({ icon, text }: LangIconProps) {

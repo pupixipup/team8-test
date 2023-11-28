@@ -4,7 +4,7 @@ import { Error } from './ui/Error';
 import { CardContainer } from './ui/CardContainer';
 import React from 'react';
 
-export function Card({
+export default function Card({
   userId,
   languages,
   isLeader,

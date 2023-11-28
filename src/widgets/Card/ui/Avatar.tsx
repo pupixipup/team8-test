@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import styles from './Card.module.scss';
 import { Crown } from '@/shared/assets/Crown';
-import { AvatarProps } from '../Card';
+import { AvatarProps } from '../types';
 
 export function Avatar({ isLeader, avatarUrl, name }: AvatarProps) {
   return (

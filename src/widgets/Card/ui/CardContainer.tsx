@@ -5,7 +5,7 @@ import { Langs } from './Langs';
 import { Name } from './Name';
 import { Position } from './Position';
 import { Stack } from './Stack';
-import { CardContainerProps } from '../Card';
+import { CardContainerProps } from '../types';
 
 export function CardContainer({
   data,

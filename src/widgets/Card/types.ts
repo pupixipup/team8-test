@@ -14,6 +14,13 @@ export interface CardContainerProps {
   isLeader: Boolean;
 }
 
+export interface CardProps {
+  userId: string;
+  languages: string[];
+  stack: string[];
+  isLeader: Boolean;
+}
+
 export interface LangIconProps {
   icon?: string;
   text?: string;

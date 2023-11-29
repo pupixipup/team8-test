@@ -3,18 +3,14 @@ import { Loading } from './ui/Loading';
 import { Error } from './ui/Error';
 import { CardContainer } from './ui/CardContainer';
 import React from 'react';
+import { CardProps } from './types';
 
 export default function Card({
   userId,
   languages,
   isLeader,
   stack,
-}: {
-  userId: string;
-  languages: string[];
-  stack: string[];
-  isLeader: Boolean;
-}) {
+}: CardProps) {
   const { data, isLoading, isError } = useUser(userId);
 
   if (isLoading) return <Loading />;

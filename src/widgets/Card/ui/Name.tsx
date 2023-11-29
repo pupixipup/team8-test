@@ -1,7 +1,5 @@
-import { ReactElement, ReactNode } from 'react';
 import styles from './Card.module.scss';
 import { flags } from '@/shared/const/flags';
-import Image from 'next/image';
 import { NameProps } from '../types';
 
 export function Name({ name, country }: NameProps) {

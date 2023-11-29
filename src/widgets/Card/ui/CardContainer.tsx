@@ -1,4 +1,3 @@
-import { User } from '@/shared/model/User';
 import { Avatar } from './Avatar';
 import styles from './Card.module.scss';
 import { Langs } from './Langs';
@@ -25,8 +24,8 @@ export function CardContainer({
           <Langs languages={languages} />
         </div>
         <div className={styles.title}>
-        <Name name={data.results[0].name} country={'UA'} />
-        <Position>Data Scientist</Position>
+          <Name name={data.results[0].name} country={'UA'} />
+          <Position>Data Scientist</Position>
         </div>
       </div>
       <div className={styles.bottomContainer}>

@@ -1,6 +1,5 @@
 import { useUser } from './action/useUser';
 import { Loading } from './ui/Loading';
-import Err from '@/app/error';
 import { CardContainer } from './ui/CardContainer';
 import React from 'react';
 import { CardProps } from './types';
@@ -11,7 +10,7 @@ export default function Card({
   isLeader,
   stack,
 }: CardProps) {
-  const { data, isLoading, isError } = useUser(userId);
+  const { data, isLoading } = useUser(userId);
 
   if (isLoading || !data) return <Loading />;
 

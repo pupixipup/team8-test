@@ -1,7 +1,7 @@
 'use client';
 
 import { QueryClient, QueryClientProvider } from 'react-query';
-import { ReactNode, useState } from 'react';
+import { useState } from 'react';
 import { ReactParent } from '@/shared/model/util';
 
 function QueryProvider({ children }: ReactParent) {

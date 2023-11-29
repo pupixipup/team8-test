@@ -1,4 +1,3 @@
-import { ReactNode } from 'react';
 import styles from './Card.module.scss';
 import { PositionProps } from '../types';
 

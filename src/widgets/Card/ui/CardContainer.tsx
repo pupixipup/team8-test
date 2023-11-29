@@ -24,9 +24,10 @@ export function CardContainer({
           />
           <Langs languages={languages} />
         </div>
+        <div className={styles.title}>
         <Name name={data.results[0].name} country={'UA'} />
-        <div className={styles.nameSpacer}></div>
         <Position>Data Scientist</Position>
+        </div>
       </div>
       <div className={styles.bottomContainer}>
         <Stack stack={stack} />

@@ -27,8 +27,10 @@
   overflow: hidden;
 }
 
-.nameSpacer {
-  height: 4px;
+.title {
+  gap: 4px;
+  display: flex;
+  flex-direction: column;
 }
 
 .nameContainer {

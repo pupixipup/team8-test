@@ -1,15 +1,15 @@
-import Image from "next/image"
-import styles from "./Card.module.scss"
-import langs from "@/shared/const/langs"
+import styles from './Card.module.scss';
+import { langs } from '@/shared/const/langs';
+import { LangIconProps } from '../types';
+import { ReactNode } from 'react';
 
-function LangIcon( { icon, text }: { icon?: string, text?: string }) {
-
-
-  return (
-    <div className={styles.langIcon}>
-      { text ? text : icon ? <Image alt={icon} src={langs[icon]} /> : "" }
-    </div>
-  )
+export function LangIcon({ icon, text }: LangIconProps) {
+  let Element: ReactNode | null | string = null;
+  if (text) {
+    Element = text;
+  } else if (icon) {
+    const InvokedComponent = langs[icon];
+    Element = <InvokedComponent />;
+  }
+  return <div className={styles.langIcon}>{Element}</div>;
 }
-
-export default LangIcon

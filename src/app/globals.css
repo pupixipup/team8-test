@@ -1,8 +1,13 @@
-:root, * {
-  font-family: Rubik;
+:root,
+* {
   box-sizing: border-box;
 }
 
 body {
-background: black;
+  background: black;
+}
+
+.error,
+.loading {
+  color: white;
 }

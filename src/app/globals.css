@@ -7,3 +7,7 @@
 body {
   background: black;
 }
+
+.error, .loading {
+  color: white;
+}
